@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<header>
+    <title>Javascript</title>
+    <link rel="stylesheet" href="css/style.css" />
+</header>
+
+<body>
+    <h1>My First Button</h1>
+    <div id="buttonContainer" class="container" ;>
+        <button id="myButton" ; onclick="myFunction()"; 
+        onclick="changBackground">My Name Is</button>
+    </div>
+    <script>
+        let button = document.getElementById('myButton');
+        console.log(button);
+
+        function myFunction() {
+            if(button.innerHTML != "Zhiwen Guo"){
+                button.innerHTML = "Zhiwen Guo";
+                button.style.backgroundColor = "green";
+                button.backgroundcolor = "green";
+
+            }else{
+                button.innerHTML = 'My Name Is';
+                button.style.backgroundColor = "blue"
+                
+            }
+
+           
+        }
+        function sum(a,b){
+            c = a + b;
+            return c
+        }
+        console.log (sum(4,5))
+        function square(a,b){
+            c = a * b;
+            return c
+        }
+        console.log(square(5,5))
+        function rectangle(a,b){
+            c = a * b;
+            return c
+        }
+        console.log(rectangle(4,5))
+        function circle(b,d){
+            a = b * d * d;
+            return a
+        }
+        console.log(circle(3.14,5))
+</script>
+</body>
+
+</html>
